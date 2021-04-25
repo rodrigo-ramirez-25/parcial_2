@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Auth::routes();
+
+Route::resource('cuentas', 'CuentaController')->middleware('auth');
+
+Route::get('/home', 'HomeController@index')->name('home');
