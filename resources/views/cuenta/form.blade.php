@@ -2,7 +2,7 @@
     <div class="box-body">
         
         <div class="form-group">
-            {{ Form::label('no_cuentas') }}
+            {{ Form::label('no_cuenta') }}
             {{ Form::text('no_cuentas', $cuenta->no_cuentas, ['class' => 'form-control' . ($errors->has('no_cuentas') ? ' is-invalid' : ''), 'placeholder' => 'No Cuentas']) }}
             {!! $errors->first('no_cuentas', '<div class="invalid-feedback">:message</p>') !!}
         </div>
@@ -13,7 +13,7 @@
         </div>
         <div class="form-group">
             {{ Form::label('fecha_apertura') }}
-            {{ Form::text('fecha_apertura', $cuenta->fecha_apertura, ['class' => 'form-control' . ($errors->has('fecha_apertura') ? ' is-invalid' : ''), 'placeholder' => 'Fecha Apertura']) }}
+            {{ Form::date('fecha_apertura', $cuenta->fecha_apertura, ['class' => 'form-control' . ($errors->has('fecha_apertura') ? ' is-invalid' : ''), 'placeholder' => 'Fecha Apertura']) }}
             {!! $errors->first('fecha_apertura', '<div class="invalid-feedback">:message</p>') !!}
         </div>
         <div class="form-group">
@@ -23,12 +23,12 @@
         </div>
         <div class="form-group">
             {{ Form::label('saldo') }}
-            {{ Form::text('saldo', $cuenta->saldo, ['class' => 'form-control' . ($errors->has('saldo') ? ' is-invalid' : ''), 'placeholder' => 'Saldo']) }}
+            {{ Form::text('saldo', $cuenta->saldo, ['class' => 'form-control' . ($errors->has('saldo') ? ' is-invalid' : ''), 'placeholder' => 'Saldo Q']) }}
             {!! $errors->first('saldo', '<div class="invalid-feedback">:message</p>') !!}
         </div>
 
     </div>
     <div class="box-footer mt20">
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary">{{ __('Submit') }}</button>
     </div>
 </div>

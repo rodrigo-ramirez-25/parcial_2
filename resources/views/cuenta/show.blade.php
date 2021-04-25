@@ -11,17 +11,17 @@
                 <div class="card">
                     <div class="card-header">
                         <div class="float-left">
-                            <span class="card-title">Show Cuenta</span>
+                            <span class="card-title">{{ __('Show') }} Cuenta</span>
                         </div>
                         <div class="float-right">
-                            <a class="btn btn-primary" href="{{ route('cuentas.index') }}"> Back</a>
+                            <a class="btn btn-primary" href="{{ route('cuentas.index') }}">{{ __('Back') }}</a>
                         </div>
                     </div>
 
                     <div class="card-body">
                         
                         <div class="form-group">
-                            <strong>No Cuentas:</strong>
+                            <strong>No Cuenta:</strong>
                             {{ $cuenta->no_cuentas }}
                         </div>
                         <div class="form-group">

@@ -36,7 +36,7 @@
                                     <tr>
                                         <th>No</th>
                                         
-										<th>No Cuentas</th>
+										<th>No Cuenta</th>
 										<th>Tipo Cuenta</th>
 										<th>Fecha Apertura</th>
 										<th>Nombre Cliente</th>
@@ -54,15 +54,15 @@
 											<td>{{ $cuenta->tipo_cuenta }}</td>
 											<td>{{ $cuenta->fecha_apertura }}</td>
 											<td>{{ $cuenta->nombre_cliente }}</td>
-											<td>{{ $cuenta->saldo }}</td>
+											<td>Q{{ $cuenta->saldo }}</td>
 
                                             <td>
                                                 <form action="{{ route('cuentas.destroy',$cuenta->id) }}" method="POST">
-                                                    <a class="btn btn-sm btn-primary " href="{{ route('cuentas.show',$cuenta->id) }}"><i class="fa fa-fw fa-eye"></i> Show</a>
-                                                    <a class="btn btn-sm btn-success" href="{{ route('cuentas.edit',$cuenta->id) }}"><i class="fa fa-fw fa-edit"></i> Edit</a>
+                                                    <a class="btn btn-sm btn-primary " href="{{ route('cuentas.show',$cuenta->id) }}"><i class="fa fa-fw fa-eye"></i>{{ __('Show') }}</a>
+                                                    <a class="btn btn-sm btn-success" href="{{ route('cuentas.edit',$cuenta->id) }}"><i class="fa fa-fw fa-edit"></i>{{ __('Edit') }}</a>
                                                     @csrf
                                                     @method('DELETE')
-                                                    <button type="submit" class="btn btn-danger btn-sm"><i class="fa fa-fw fa-trash"></i> Delete</button>
+                                                    <button type="submit" class="btn btn-danger btn-sm"><i class="fa fa-fw fa-trash"></i>{{ __('Delete') }}</button>
                                                 </form>
                                             </td>
                                         </tr>
