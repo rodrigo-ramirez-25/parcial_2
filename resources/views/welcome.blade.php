@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Banco Chapin -BAC-</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -14,16 +14,34 @@
         <style>
             html, body {
                 
-                color: #ec1a1a;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
                 height: 100vh;
                 margin: 0;
                 background-image: url(https://republica.gt/wp-content/uploads/2018/08/SIB-e1553724232186.jpg);
+                background-position: center center;
                 background-repeat: no-repeat;
-                background-size: auto;
+                background-attachment: fixed;
+                background-size: cover;
+                background-color: #FFF;
+                color: rgb(231, 191, 12)
             }
-
+            .button {
+                background-color: #4F4F4F;
+                border: none;
+                color: white;
+                padding: 15px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+                border-radius: 50%;
+            }
+            .modal-main-hover{
+                color: aqua
+            }
             .full-height {
                 height: 100vh;
             }
@@ -42,6 +60,8 @@
                 position: absolute;
                 right: 10px;
                 top: 18px;
+                font-family: Arial Black;
+                font-size: 25px;
             }
 
             .content {
@@ -55,7 +75,7 @@
             }
 
             .links > a {
-                color: #15e230;
+                color: #f30000;
                 padding: 0 25px;
                 font-size: 22px;
                 font-weight: 600;
@@ -66,13 +86,16 @@
 
             .m-b-md {
                 margin-bottom: 30px;
-            }
+            }        
+            .btn{
+                opacity: 0.8;
+            }    
         </style>
     </head>
     <body>
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
-                <div class="top-right links">
+                <div class="top-right links btn btn-info btn btn-outline-primary" id="inicio">
                     @auth
                         <a href="{{ url('cuentas') }}">Cuentas</a>
                     @else
@@ -83,18 +106,18 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Banco Chapin -BAC-
                 </div>
 
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
+                <br>
+                <br>
+                <h1 id="modal-main-hover">
+                    Evolucionar, una palabra que 
+                    <br>
+                    escuchamos en todas partes,
+                    <br>
+                    y suena fácil, 
+                </h1>
             </div>
         </div>
     </body>

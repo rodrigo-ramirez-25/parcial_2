@@ -583,6 +583,7 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  color: #227dc7;
 }
 
 @media (min-width: 576px) {
@@ -4537,6 +4538,7 @@ input[type=button].btn-block {
   font-size: 1.125rem;
   line-height: inherit;
   white-space: nowrap;
+  color: #1b4b72;
 }
 
 .navbar-brand:hover,
@@ -4550,6 +4552,7 @@ input[type=button].btn-block {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+  color: #123c24;
 }
 
 .navbar-nav .nav-link {
@@ -4665,6 +4668,7 @@ input[type=button].btn-block {
   .navbar-expand-md > .container-xl {
     padding-right: 0;
     padding-left: 0;
+    color: #227dc7;
   }
 }
 
@@ -4672,19 +4676,23 @@ input[type=button].btn-block {
   .navbar-expand-md {
     flex-flow: row nowrap;
     justify-content: flex-start;
+    color: #227dc7;
   }
 
   .navbar-expand-md .navbar-nav {
     flex-direction: row;
+    color: #227dc7;
   }
 
   .navbar-expand-md .navbar-nav .dropdown-menu {
     position: absolute;
+    color: #227dc7;
   }
 
   .navbar-expand-md .navbar-nav .nav-link {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
+    color: #227dc7;
   }
 
   .navbar-expand-md > .container,
@@ -4694,6 +4702,7 @@ input[type=button].btn-block {
   .navbar-expand-md > .container-lg,
   .navbar-expand-md > .container-xl {
     flex-wrap: nowrap;
+    color: #227dc7;
   }
 
   .navbar-expand-md .navbar-nav-scroll {
