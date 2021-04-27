@@ -12,8 +12,7 @@
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
         <!-- Styles -->
         <style>
-            html, body {
-                
+            html, body {                
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
                 height: 100vh;
@@ -39,9 +38,7 @@
                 cursor: pointer;
                 border-radius: 50%;
             }
-            .modal-main-hover{
-                color: aqua
-            }
+            
             .full-height {
                 height: 100vh;
             }
@@ -89,7 +86,19 @@
             }        
             .btn{
                 opacity: 0.8;
-            }    
+            }  
+            .parrafo{
+                width: 1000px;
+                color: #020202fa;
+                text-align: center;
+                align-items: center;
+                align-items: center;   
+                font-size: 20px;             
+            }  
+            .parrafo1{
+                background-color: gainsboro;
+                opacity: 0.8;
+            }  
         </style>
     </head>
     <body>
@@ -107,18 +116,18 @@
             <div class="content">
                 <div class="title m-b-md">
                     Banco Chapin -BAC-
-                </div>
-
-                <br>
-                <br>
-                <h1 id="modal-main-hover">
-                    Evolucionar, una palabra que 
+                </div>         
+                <div class="parrafo">
                     <br>
-                    escuchamos en todas partes,
-                    <br>
-                    y suena fácil, 
-                </h1>
-            </div>
+                    <p class="parrafo1">
+                        Parte de nuestro propósito en el Banco Chapin
+                        es promover el desarrollo económico sostenible para lograr el bienestar de todos.
+                        Respondemos a una agenda global que está basada en los 17 Objetivos de Desarrollo 
+                        Sostenible de Naciones Unidas, que nos une con otros actores de la sociedad para emprender 
+                        acciones de impacto.
+                    </p>
+                </div>       
+            </div>            
         </div>
     </body>
 </html>
