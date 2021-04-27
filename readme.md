@@ -1,8 +1,13 @@
 Universidad de San Carlos de Guatemala - USAC.
+
 Escuela de Formación de Profesores de Enseñanza Media - EFPEM.
+
 Cátedra de Computación e Informática - CCI.
+
 Licenciatura en la Enseñanza de la Informática y Computación.
+
 Curso: Diseño Web.
+
 Catedrático: Mynor Escobar.
 # Descripción Parcial 2
 
