@@ -9,15 +9,19 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
+        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
         <!-- Styles -->
         <style>
             html, body {
-                background-color: #fff;
-                color: #636b6f;
+                
+                color: #ec1a1a;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
                 height: 100vh;
                 margin: 0;
+                background-image: url(https://republica.gt/wp-content/uploads/2018/08/SIB-e1553724232186.jpg);
+                background-repeat: no-repeat;
+                background-size: auto;
             }
 
             .full-height {
@@ -42,6 +46,8 @@
 
             .content {
                 text-align: center;
+                font-size: 26px;
+                font-family: arial black;
             }
 
             .title {
@@ -49,9 +55,9 @@
             }
 
             .links > a {
-                color: #636b6f;
+                color: #15e230;
                 padding: 0 25px;
-                font-size: 13px;
+                font-size: 22px;
                 font-weight: 600;
                 letter-spacing: .1rem;
                 text-decoration: none;

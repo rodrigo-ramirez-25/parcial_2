@@ -1,0 +1,9 @@
+html, body {
+    /*background-color: #fff;*/
+    color: #636b6f;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 200;
+    height: 100vh;
+    margin: 0;
+    background-image: url(https://www.ebankingnews.com/wp-content/uploads/2019/02/bank-01.jpg);
+}
