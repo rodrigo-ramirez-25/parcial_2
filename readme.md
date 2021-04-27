@@ -1,6 +1,7 @@
 # Descripción Parcial 2
 
-Esta aplicación web fue creada para el uso interno de personal del Banco Chapin -BAC-
+Esta aplicación web fue creada para el uso interno de personal del Banco Chapin -BAC-.
+
 En el cual podran ver, modificar, agregar y eliminar los datos de todos los clientes del banco, para realizar cualquier operación que el banco necesite realizar sobre dicho cliente.
 
 
