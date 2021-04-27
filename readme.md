@@ -30,19 +30,26 @@ En esta aplicación web las tecnologias utilizadas son las siguientes:
 
 
 ## Usuarios Administradores
-User: Rodrigo.
-email:rodrigo@rodrigo.com.
-Password:123456789.
+User: Rodrigo
 
-User:Juan.
-email:juan@gmail.com.
-Password:asdfqwer.
+email:rodrigo@rodrigo.com
 
-User:Laura.
-User:laura@hotmail.com.
-Password:123asdf456.
+Password:123456789
+
+User:Juan
+
+email:juan@gmail.com
+
+Password:asdfqwer
+
+User:Laura
+
+User:laura@hotmail.com
+
+Password:123asdf456
 
 ## Licencia
-Nombre: José Rodrigo Ramírez Alberto.
-Carné: 201401027.
+Nombre: José Rodrigo Ramírez Alberto
+
+Carné: 201401027
 
