@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 25-04-2021 a las 20:41:51
+-- Tiempo de generación: 29-04-2021 a las 00:10:43
 -- Versión del servidor: 10.1.25-MariaDB
 -- Versión de PHP: 7.1.7
 
@@ -21,6 +21,8 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `bd_banco`
 --
+CREATE DATABASE IF NOT EXISTS `bd_banco` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+USE `bd_banco`;
 
 -- --------------------------------------------------------
 
@@ -44,7 +46,8 @@ CREATE TABLE `cuentas` (
 --
 
 INSERT INTO `cuentas` (`id`, `no_cuentas`, `tipo_cuenta`, `fecha_apertura`, `nombre_cliente`, `saldo`, `created_at`, `updated_at`) VALUES
-(1, 123456789, 'Ahorro', '1999-03-25', 'Rodrigo', 12345689.2, '2021-04-25 15:34:26', '2021-04-25 15:34:26');
+(2, 256598, 'Monetaria', '2021-04-27', 'José Rodrigo Ramírez', 1500, '2021-04-28 11:28:41', '2021-04-28 11:54:42'),
+(4, 456789123, 'Monetaria', '2021-04-20', 'Angel Solorzano', 3500, '2021-04-28 11:34:14', '2021-04-28 11:34:14');
 
 -- --------------------------------------------------------
 
@@ -101,7 +104,9 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'Rodrigo', 'rodrigo@rodrigo.com', NULL, '$2y$10$Q5vRRr5mVrdWoW08/iXRRunBpZNHwjOhH/9S5QO8l6JM1whlbwaeK', NULL, '2021-04-25 15:31:26', '2021-04-25 15:31:26');
+(1, 'Rodrigo', 'rodrigo@rodrigo.com', NULL, '$2y$10$Q5vRRr5mVrdWoW08/iXRRunBpZNHwjOhH/9S5QO8l6JM1whlbwaeK', 'OUSPV0XOn5hsVWtrSriJEfA1O8Lzshivgc3dTcnhP7mkjmh8n0hZTazas7C7', '2021-04-25 15:31:26', '2021-04-25 15:31:26'),
+(2, 'Juan', 'juan@gmail.com', NULL, '$2y$10$BUCJoV9JqczPB7PyvJy1puT3oT4ZBN1/XmM9AJMx6nOaXsAPbcQ2e', NULL, '2021-04-27 11:04:23', '2021-04-27 11:04:23'),
+(3, 'Laura', 'laura@hotmail.com', NULL, '$2y$10$rxnzpgUbN35yfrmsPL0aVOlvJVH0PJ12mb4GaHl5YN5ahIwR0uDX6', NULL, '2021-04-27 11:06:29', '2021-04-27 11:06:29');
 
 --
 -- Índices para tablas volcadas
@@ -140,7 +145,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT de la tabla `cuentas`
 --
 ALTER TABLE `cuentas`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT de la tabla `migrations`
 --
@@ -150,7 +155,7 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT de la tabla `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;COMMIT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
