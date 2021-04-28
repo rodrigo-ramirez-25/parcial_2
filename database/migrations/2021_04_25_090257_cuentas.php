@@ -15,9 +15,9 @@ class Cuentas extends Migration
     {
         Schema::create('cuentas', function (Blueprint $table) {
             $table->bigIncrements('id');
-           $table->bigInteger('no_cuentas');
-           $table->string('tipo_cuenta');
-           $table->date('fecha_apertura');
+            $table->bigInteger('no_cuentas');
+            $table->string('tipo_cuenta');
+            $table->date('fecha_apertura');
             $table->string('nombre_cliente');
             $table->double('saldo');
             $table->timestamps();

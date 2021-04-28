@@ -48,7 +48,7 @@ class CuentaController extends Controller
         $cuenta = Cuenta::create($request->all());
 
         return redirect()->route('cuentas.index')
-            ->with('success', 'Cuenta created successfully.');
+            ->with('success', 'Cuenta creada exitosamente.');
     }
 
     /**
@@ -91,7 +91,7 @@ class CuentaController extends Controller
         $cuenta->update($request->all());
 
         return redirect()->route('cuentas.index')
-            ->with('success', 'Cuenta updated successfully');
+            ->with('success', 'Cuenta modificada exitosamente.');
     }
 
     /**
@@ -104,6 +104,6 @@ class CuentaController extends Controller
         $cuenta = Cuenta::find($id)->delete();
 
         return redirect()->route('cuentas.index')
-            ->with('success', 'Cuenta deleted successfully');
+            ->with('success', 'Cuenta eliminada exitosamente.');
     }
 }
